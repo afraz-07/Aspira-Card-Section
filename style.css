@@ -67,7 +67,7 @@ background: lavenderblush;
 }
 
 
-.success-asp .blog-card2 {
+.success-asp .success-cards {
   
     height: 370px;
     width: 95%;
@@ -78,7 +78,7 @@ background: lavenderblush;
 
 }
 
-.success-asp .inner-partt {
+.success-asp .success-content {
     position: absolute;
     display: flex;
     height: 360px;
@@ -87,12 +87,12 @@ background: lavenderblush;
     padding: 0 25px;
 }
 
-.success-asp #imgTap:checked~.inner-partt {
+.success-asp #imgTap:checked~.success-content {
     padding: 0;
     transition: .1s ease-in;
 }
 
-.success-asp .inner-partt .img {
+.success-asp .success-content .success-img {
     height: 280px;
     width: 260px;
     flex-shrink: 0;
@@ -101,7 +101,7 @@ background: lavenderblush;
     box-shadow: 2px 3px 15px #000000e7;
 }
 
-.success-asp #imgTap:checked~.inner-partt .img {
+.success-asp #imgTap:checked~.success-content .success-img {
     height: 370px;
     width: 850px;
     z-index: 99;
@@ -109,7 +109,7 @@ background: lavenderblush;
     transition: .3s .2s ease-in;
 }
 
-.success-asp .img img {
+.success-asp .success-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -118,13 +118,13 @@ background: lavenderblush;
     transition: .6s;
 }
 
-#tap-2:checked~.inner-partt .img-2,
-#tap-3:checked~.inner-partt .img-3 {
+#tap-2:checked~.success-content .success-img-2,
+#tap-3:checked~.success-content .success-img-3 {
     opacity: 1;
     transition-delay: .2s;
 }
 
-.success-asp .content {
+.success-asp .success-text {
     padding: 0 20px 0 35px;
     width: 520px;
     margin-left: 30px;
@@ -132,20 +132,20 @@ background: lavenderblush;
     transition: .6s;
 }
 
-#imgTap:checked~.inner-part .content {
+#imgTap:checked~.inner-part .success-text {
     display: none;
 }
 
-#tap-1:checked~.inner-partt .content-1,
-#tap-2:checked~.inner-partt .content-2,
-#tap-3:checked~.inner-partt .content-3 {
+#tap-1:checked~.success-content .success-text-1,
+#tap-2:checked~.success-content .success-text-2,
+#tap-3:checked~.success-content .success-text-3 {
     opacity: 1;
     margin-left: 0px;
     z-index: 100;
     transition-delay: .3s;
 }
 
-.success-asp .content span {
+.success-asp .success-text span {
     display: block;
     color: #0a090e;
     margin-bottom: 15px;
@@ -153,14 +153,14 @@ background: lavenderblush;
     font-weight: 500
 }
 
-.success-asp .content .title {
+.success-asp .success-text .success-title {
     font-size: 25px;
     font-weight: 700;
     color: #7b7992;
     margin-bottom: 20px;
 }
 
-.success-asp .content .text2 {
+.success-asp .success-text .success-dis {
     color: #0a090e;
     font-size: 18px;
     margin-bottom: 30px;
@@ -170,7 +170,7 @@ background: lavenderblush;
     font-family: 'Dosis', sans-serif;
 }
 
-.success-asp .content button {
+.success-asp .success-text button {
     display: inline-flex;
     padding: 15px 15px;
     border: none;
@@ -190,11 +190,11 @@ background: lavenderblush;
     text-decoration: none;
 }
 
-.success-asp .content button:hover {
+.success-asp .success-text button:hover {
     background: linear-gradient(150deg, #23ccf6 0%, #4e43f0 74%);
 }
 
-.success-asp .sliders2 {
+.success-asp .success-sliders {
     position: absolute;
     bottom: 25px;
     left: 65%;
@@ -202,11 +202,11 @@ background: lavenderblush;
     z-index: 12;
 }
 
-#imgTap:checked~.sliders2 {
+#imgTap:checked~.success-sliders {
     display: none;
 }
 
-.success-asp .sliders2 .tap {
+.success-asp .success-sliders .tap {
     position: relative;
   
     width: 50px;
@@ -217,11 +217,11 @@ background: lavenderblush;
     cursor: pointer;
 }
 
-.success-asp .sliders2 .tap:hover {
+.success-asp .success-sliders .tap:hover {
     background: #cccccc;
 }
 
-.success-asp .sliders2 .tap:before {
+.success-asp .success-sliders .tap:before {
     position: absolute;
     content: '';
     top: 0;
@@ -240,9 +240,9 @@ input[type="checkbox"] {
     display: none;
 }
 
-#tap-1:checked~.sliders2 .tap-1:before,
-#tap-2:checked~.sliders2 .tap-2:before,
-#tap-3:checked~.sliders2 .tap-3:before {
+#tap-1:checked~.success-sliders .tap-1:before,
+#tap-2:checked~.success-sliders .tap-2:before,
+#tap-3:checked~.success-sliders .tap-3:before {
     transform: scaleX(1);
     width: 100%;
 }
@@ -338,7 +338,7 @@ input[type="checkbox"] {
 
 @media screen and (max-width:850px) {
     
-    .success-asp .content .text2{
+    .success-asp .success-text .success-dis{
         padding-right: 90px;
     }
 
@@ -351,7 +351,7 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width:800px) {
-    .success-asp .content {
+    .success-asp .success-text {
         padding: 0 20px 0 15px;
         width: 450px;
         margin-left: 20px;
@@ -366,14 +366,14 @@ input[type="checkbox"] {
 
 @media screen and (max-width:700px) {
 
-    .success-asp .content {
+    .success-asp .success-text {
         padding: 0 20px 0 15px;
         width: 450px;
         margin-left: 1px;
         
     }
 
-    .success-asp .inner-partt {
+    .success-asp .success-content {
         display: flex;
         flex-direction: column;
         height: 600px;
@@ -384,7 +384,7 @@ input[type="checkbox"] {
     
 }
 
-.success-asp .blog-card2 {
+.success-asp .success-cards {
     height: 600px;
     width: 550px;
     margin: auto;
@@ -392,18 +392,18 @@ input[type="checkbox"] {
     background-color: #B2C8DF;
 }
 
-.success-asp .content span{
+.success-asp .success-text span{
     text-align: center;
     padding-top: 15px;
     margin-bottom: 10px;
 }
 
-.success-asp .content .title{
+.success-asp .success-text .success-title{
     text-align: center;
     margin: 5px 0;
 }
 
-.success-asp .content .text2{
+.success-asp .success-text .success-dis{
     text-align: center;
     width: 100%;
     padding: 10px;
@@ -418,47 +418,47 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width:600px) {
-    .success-asp .blog-card2 {
+    .success-asp .success-cards {
         width: 500px;
     }
 
-    .success-asp .inner-partt {
+    .success-asp .success-content {
         margin-left: 5%;
     }
 }
 
 @media screen and (max-width:550px) {
-    .success-asp .blog-card2 {
+    .success-asp .success-cards {
         width: 450px;
     }
 
-    .success-asp .inner-partt {
+    .success-asp .success-content {
         margin-left: 1%;
     }
 }
 
 @media screen and (max-width:500px) {
-    .success-asp .blog-card2 {
+    .success-asp .success-cards {
         height: 610px;
         width: 400px;
     }
 
-    .success-asp .inner-partt {
+    .success-asp .success-content {
         margin-left: 0%;
     }
 
-    .success-asp .content{
+    .success-asp .success-text{
         width: 400px;
     }
 }
 
 @media screen and (max-width:450px) {
-    .success-asp .blog-card2 {
+    .success-asp .success-cards {
         height: 650px;
         width: 350px;
     }
 
-    .success-asp .content{
+    .success-asp .success-text{
         width: 350px;
     }
 
@@ -468,32 +468,32 @@ input[type="checkbox"] {
         
     }
 
-    .success-asp .inner-partt {
+    .success-asp .success-content {
         height: 650px;
     }
 
-    .success-asp .inner-partt .img {
+    .success-asp .success-content .success-img {
         height: 250px;
         width: 230px;
     }
 }
 
 @media screen and (max-width:400px) {
-    .success-asp .blog-card2 {
+    .success-asp .success-cards {
         height: 650px;
         width: 300px;
     }
 
-    .success-asp .content{
+    .success-asp .success-text{
         width: 300px;
     }
 
 
-    .success-asp .inner-partt {
+    .success-asp .success-content {
         height: 650px;
     }
 
-    .success-asp .inner-partt .img {
+    .success-asp .success-content .success-img {
         height: 230px;
         width: 210px;
     }
@@ -506,17 +506,17 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width:350px) {
-    .success-asp .blog-card2 {
+    .success-asp .success-cards {
         height: 650px;
         width: 300px;
     }
 
-    .success-asp .content{
+    .success-asp .success-text{
         width: 300px;
     }
 
    
-    .success-asp .inner-partt {
+    .success-asp .success-content {
         height: 650px;
     }
 
@@ -529,17 +529,17 @@ input[type="checkbox"] {
 
 
 @media screen and (max-width:300px) {
-    .success-asp .blog-card2 {
+    .success-asp .success-cards {
         height: 700px;
         width: 250px;
     }
 
-    .success-asp .content{
+    .success-asp .success-text{
         width: 250px;
     }
 
    
-    .success-asp .inner-partt {
+    .success-asp .success-content {
         height: 700px;
     }
 
